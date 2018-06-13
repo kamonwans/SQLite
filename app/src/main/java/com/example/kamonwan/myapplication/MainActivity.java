@@ -13,5 +13,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         objUserTABLE = new UserTABLE(this);
         objOrderTABLE = new OrderTABLE(this);
+
+        //Tester
+        testAddValue();
+    }
+
+    private void testAddValue() {
+        objUserTABLE.addValueToUser("User", "Password", "Officer");
+        objOrderTABLE.addValueToOrder("Officer", "Date", "Orders", 4);
     }
 }
